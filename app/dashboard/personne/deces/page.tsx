@@ -27,7 +27,7 @@ const Deces = () => {
             )
         }
     ];
-    const [data, setData]= useState([]);
+    const [dataS, setData]= useState([]);
     const [search, SetSearch]= useState('');
     const [filter, setFilter]= useState([]);
 
@@ -35,6 +35,7 @@ const Deces = () => {
     try{
         const req= await fetch("https://cent-kilo.site/api/fetch_all_deces_personne_paginate");
         const res= await req.json();
+
         setData(res.data);
         setFilter(res.data);
     } catch(error){
@@ -46,14 +47,14 @@ const Deces = () => {
     }, []);
 
     useEffect(()=>{
-        const result= data.filter((item)=>{
+        const result= dataS.filter((item)=>{
          return item.noms_pers.toLowerCase().match(search.toLocaleLowerCase());
         });
         setFilter(result);
     },[search]);
 
     const handleDelete=(val)=>{
-      const newdata= data.filter((item)=>item.id!==val);
+      const newdata= dataS.filter((item)=>item.id!==val);
       setFilter(newdata);
     }
 

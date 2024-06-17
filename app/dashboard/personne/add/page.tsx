@@ -115,7 +115,7 @@ const AddPersonne = () => {
           <input type="text" name="" id="" placeholder="Adresse email" />
           <input type="number" name="" id="" placeholder="Fonction" />
           <select name="" id="">
-            <option value="">Niveau d'etude</option>
+            <option value="">Niveau d&apos;etude</option>
             <option value="">Diplome</option>
             <option value="">Gradue</option>
           </select>
