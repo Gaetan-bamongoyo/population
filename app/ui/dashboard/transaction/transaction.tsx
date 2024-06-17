@@ -16,12 +16,6 @@ const Transaction = () => {
                 <tr>
                     <td>
                         <div className={styles.user}>
-                            <img src="/1.png" 
-                            alt=""
-                            width={40}
-                            height={40}
-                            className={styles.userImage}
-                            />
                             John Doe
                         </div>
                     </td>
@@ -34,12 +28,6 @@ const Transaction = () => {
                 <tr>
                     <td>
                         <div className={styles.user}>
-                            <img src="/1.png" 
-                            alt=""
-                            width={40}
-                            height={40}
-                            className={styles.userImage}
-                            />
                             John Doe
                         </div>
                     </td>
